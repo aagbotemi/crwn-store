@@ -1,10 +1,10 @@
 const hats = [
     {
         id: 1,
-        title: 'Akubra',
-        price: 599.99,
+        title: 'Fedora',
+        price: 699.99,
         img:
-        'https://i.ibb.co/cvpntL1/hats.png',
+        'https://i.ibb.co/X2VJP2W/blue-snapback.png',
         amount: 1,
     },
     {
@@ -17,10 +17,10 @@ const hats = [
     },
     {
         id: 3,
-        title: 'Balmoral',
+        title: 'Bowler',
         price: 699.99,
         img:
-        'https://i.ibb.co/ypkgK0X/blue-beanie.png',
+        'https://i.ibb.co/rKBDvJX/palm-tree-cap.png',
         amount: 1,
     },
     {
@@ -41,6 +41,14 @@ const hats = [
     },
     {
         id: 6,
+        title: 'Cloche',
+        price: 699.99,
+        img:
+        'https://i.ibb.co/bLB646Z/red-beanie.png',
+        amount: 1,
+    },
+    {
+        id: 7,
         title: 'Visor beanie',
         price: 699.99,
         img:
@@ -48,19 +56,11 @@ const hats = [
         amount: 1,
     },
     {
-        id: 7,
-        title: 'Bowler',
+        id: 6,
+        title: 'Balmoral',
         price: 699.99,
         img:
-        'https://i.ibb.co/rKBDvJX/palm-tree-cap.png',
-        amount: 1,
-    },
-    {
-        id: 8,
-        title: 'Cloche',
-        price: 699.99,
-        img:
-        'https://i.ibb.co/bLB646Z/red-beanie.png',
+        'https://i.ibb.co/ypkgK0X/blue-beanie.png',
         amount: 1,
     },
     {
@@ -72,11 +72,11 @@ const hats = [
         amount: 1,
     },
     {
-        id: 10,
-        title: 'Fedora',
-        price: 699.99,
+        id: 1,
+        title: 'Akubra',
+        price: 599.99,
         img:
-        'https://i.ibb.co/X2VJP2W/blue-snapback.png',
+        'https://i.ibb.co/cvpntL1/hats.png',
         amount: 1,
     },
 ];
