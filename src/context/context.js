@@ -4,27 +4,22 @@ import JACKETS from '../shared/jacket'
 import MENS_CLOTHING from '../shared/men'
 import SNEAKERS from '../shared/sneaker'
 import WOMENS_CLOTHING from '../shared/women'
-//import reducer from './reducer'
+
+import hats from '../shared/hat'
+
+import reducer from './reducer'
 
 const AppContext = React.createContext();
 
 const initialState = {
     loading: false,
-    //cart: cartItems,
+    cart: hats,
     total: 0,
     amount: 0,
 }
 
 export const AppProvider = ({ children }) => {
-    //const [state, dispatch] = useReducer(reducer, initialState)
-    // const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
-    // const openSidebar = () => {
-    //     setIsSidebarOpen(true)
-    // }
-    // const closeSidebar = () => {
-    //     setIsSidebarOpen(false)
-    // }
+    const [state, dispatch] = useReducer(reducer, initialState)
 
     // const clearCart = () => {
     //     dispatch({ type: 'CLEAR_CART' })
@@ -32,9 +27,9 @@ export const AppProvider = ({ children }) => {
     // const remove = (id) => {
     //     dispatch({ type: 'REMOVE', payload: id })
     // }
-    // const increase = (id) => {
-    //     dispatch({ type: 'INCREASE', payload: id })
-    // }
+    const increase = (id) => {
+        dispatch({ type: 'INCREASE', payload: id })
+    }
     // const decrease = (id) => {
     //     dispatch({ type: 'DECREASE', payload: id })
     // }
@@ -44,9 +39,9 @@ export const AppProvider = ({ children }) => {
     //     // const cart = await response.json()
     //     // dispatch({ type: 'DISPLAY_ITEMS', payload: cart })
     // }
-    // const toggleAmount = (id, type) => {
-    //     dispatch({ type: 'TOGGLE_AMOUNT', payload: { id, type } })
-    // }
+    const toggleAmount = (id, type) => {
+        dispatch({ type: 'TOGGLE_AMOUNT', payload: { id, type } })
+    }
     // useEffect(() => {
     //     fetchData()
     // }, [])
@@ -59,15 +54,12 @@ export const AppProvider = ({ children }) => {
     return (
         <AppContext.Provider
         value={{
-            // ...state,
-            // isSidebarOpen,
-            // openSidebar,
-            // closeSidebar,
+            ...state,
             // clearCart,
             // remove,
-            // increase,
+            //hats,
             // decrease,
-            // toggleAmount,
+            toggleAmount,
         }}
         >
         {children}

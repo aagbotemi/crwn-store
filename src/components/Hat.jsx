@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
 import hats from '../shared/hat'
+import { useGlobalContext } from '../context/context'
 
 const Hat = () => {
+    const { toggleAmount } = useGlobalContext()
+
     return (
         <section className="m-10">
             <h1 className="text-3xl">HATS</h1>
@@ -20,7 +23,7 @@ const Hat = () => {
                                     <p>{title}</p>
                                     <p className="ml-auto">&#36;{price}</p>
                                 </div>
-                                <button className="btn absolute bg-white p-2 font-bold">
+                                <button className="btn absolute bg-white p-2 font-bold" onClick={() => toggleAmount(id, 'inc')}>
                                     ADD TO CART
                                 </button>
                             </div>

@@ -1,14 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { ReactComponent as Logo} from '../images/crwn-logo.svg';
 // import { ReactComponent as Cart} from '../images/cart-logo.svg';
 import { FaBars, FaCrown } from 'react-icons/fa';
 import { AiOutlineShopping } from 'react-icons/ai';
-// import { useGlobalContext } from '../context/context';
+import { useGlobalContext } from '../context/context';
 
 const Navbar = ({fixed}) => {
-//   const { openSidebar } = useGlobalContext()
+  const { amount } = useGlobalContext()
 
-    const [navbarOpen, setNavbarOpen] = React.useState(false);
+    const [navbarOpen, setNavbarOpen] = useState(false);
 
     return (
         <>
@@ -68,7 +68,7 @@ const Navbar = ({fixed}) => {
                         >
                             <AiOutlineShopping />
                         </a>
-                        <p className='total-amount absolute font-bold text-gray-900'>34</p>
+                        <p className='total-amount absolute font-bold text-gray-900'>{amount}</p>
                     </li>
                     
                     </ul>

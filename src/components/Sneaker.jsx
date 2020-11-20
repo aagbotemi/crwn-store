@@ -1,7 +1,8 @@
 import React from 'react'
 import sneakers from '../shared/sneaker'
-
+import { useGlobalContext } from '../context/context'
 const Sneaker = () => {
+    const { toggleAmount } = useGlobalContext()
     return (
         <section className="m-10 my-10">
             <h1 className="text-3xl">SNEAKERS</h1>
@@ -19,7 +20,7 @@ const Sneaker = () => {
                                     <p>{title}</p>
                                     <p className="ml-auto">&#36;{price}</p>
                                 </div>
-                                <button className="btn absolute bg-white p-2 font-bold">
+                                <button className="btn absolute bg-white p-2 font-bold" onClick={() => toggleAmount(id, 'inc')}>
                                     ADD TO CART
                                 </button>
                             </div>

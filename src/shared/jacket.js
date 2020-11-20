@@ -1,14 +1,6 @@
-export const JACKETS = [
+const jackets = [
     {
         id: 1,
-        title: 'Samsung Galaxy S7',
-        price: 599.99,
-        img:
-            'https://i.ibb.co/px2tCc3/jackets.png',
-        amount: 1,
-    },
-    {
-        id: 2,
         title: 'google pixel ',
         price: 499.99,
         img:
@@ -16,7 +8,7 @@ export const JACKETS = [
         amount: 1,
     },
     {
-        id: 3,
+        id: 2,
         title: 'Xiaomi Redmi Note 2',
         price: 699.99,
         img:
@@ -24,7 +16,7 @@ export const JACKETS = [
         amount: 1,
     },
     {
-        id: 4,
+        id: 3,
         title: 'Xiaomi Redmi Note 2',
         price: 699.99,
         img:
@@ -32,7 +24,7 @@ export const JACKETS = [
         amount: 1,
     },
     {
-        id: 5,
+        id: 4,
         title: 'Xiaomi Redmi Note 2',
         price: 699.99,
         img:
@@ -40,3 +32,5 @@ export const JACKETS = [
         amount: 1,
     },
 ];
+
+export default jackets;
