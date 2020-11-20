@@ -1,5 +1,6 @@
 import React from 'react';
-// import logo from '../images/logo.svg';
+import { ReactComponent as Logo} from '../images/crwn-logo.svg';
+// import { ReactComponent as Cart} from '../images/cart-logo.svg';
 import { FaBars, FaCrown } from 'react-icons/fa';
 import { AiOutlineShopping } from 'react-icons/ai';
 // import { useGlobalContext } from '../context/context';
@@ -11,14 +12,14 @@ const Navbar = ({fixed}) => {
 
     return (
         <>
-            <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-gray-500 shadow mb-3">
+            <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-gray-400 shadow mb-3">
                 <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
                     <div className="w-full relative flex justify-between md:w-auto md:static md:block md:justify-start">
                         <a
                         className="text-sm font-bold leading-relaxed inline-block mr-4 whitespace-no-wrap uppercase text-gray-800 text-5xl"
                         href="#pablo"
                         >
-                            <FaCrown />
+                            <Logo />
                         </a>
                         <button
                         className="text-black cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block md:hidden outline-none focus:outline-none text-gray-800"

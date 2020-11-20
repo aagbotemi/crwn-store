@@ -2,27 +2,69 @@
     top: 0.9rem;
     right: 1.4rem;
     font-size: 15px;
-    /* text-align: center; */
-    /* color: #fff; */
+}
 
-    /* top: 12rem;
-    left: 3.7rem; */
+.cart:hover .btn {
+    display: block;
+}
+
+.cart:hover {
+    opacity: 0.7;
+   filter: alpha(opacity=70);
 }
 
 .cart {
-    top: 20rem;
-    left: 8.5rem;
-    font-size: 15px;
-    /* text-align: center; */
-    /* color: #fff; */
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
 
-    /* top: 12rem;
-    left: 3.7rem; */
+.btn {
+    top: 12.5rem;
+    left: 4rem;
+    font-size: 15px;
+    outline: none !important;
+    display: none;
+}
+
+@media only screen and (max-width:991px) {
+    .btn {
+        top: 9rem;
+        left: 2rem;
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-width:767px) {
     .total-amount {
         top: 0.9rem;
         left: 1.25rem;
+    }
+    .btn {
+        top: 17rem;
+        left: 6.5rem;
+    }
+}
+
+@media (max-width:640px) and (min-width:570px) {
+    .btn {
+        top: 33rem;
+        left: 10rem;
+        width: 12rem;
+    }
+}
+
+@media only screen and (max-width:570px) {
+    .btn {
+        top: 19rem;
+        left: 7.5rem;
+        width: 10rem;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .btn {
+        top: 11rem;
+        left: 4rem;
+        width: 7.5rem;
     }
 }
