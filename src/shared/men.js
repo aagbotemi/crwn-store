@@ -2,48 +2,48 @@
 const men = [
     {
         id: 1,
-        title: 'google pixel ',
-        price: 499.99,
+        title: 'Camo Vest',
+        price: 325,
         img:
         'https://i.ibb.co/xJS0T3Y/camo-vest.png',
         amount: 1,
     },
     {
         id: 2,
-        title: 'Xiaomi Redmi Note 2',
-        price: 699.99,
+        title: 'Floral Shirt',
+        price: 130,
         img:
         'https://i.ibb.co/qMQ75QZ/floral-shirt.png',
         amount: 1,
     },
     {
         id: 3,
-        title: 'Xiaomi Redmi Note 2',
-        price: 699.99,
+        title: 'Long Sleeve',
+        price: 150,
         img:
         'https://i.ibb.co/55z32tw/long-sleeve.png',
         amount: 1,
     },
     {
         id: 4,
-        title: 'Xiaomi Redmi Note 2',
-        price: 699.99,
+        title: 'Pink Shirt',
+        price: 80,
         img:
         'https://i.ibb.co/RvwnBL8/pink-shirt.png',
         amount: 1,
     },
     {
         id: 5,
-        title: 'Xiaomi Redmi Note 2',
-        price: 699.99,
+        title: 'Roll-up Jean Shirt',
+        price: 220,
         img:
         'https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png',
         amount: 1,
     },
     {
         id: 6,
-        title: 'Xiaomi Redmi Note 2',
-        price: 699.99,
+        title: 'Polka Dot Shirt',
+        price: 110,
         img:
         'https://i.ibb.co/mh3VM1f/polka-dot-shirt.png',
         amount: 1,
