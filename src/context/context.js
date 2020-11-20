@@ -21,18 +21,18 @@ const initialState = {
 export const AppProvider = ({ children }) => {
     const [state, dispatch] = useReducer(reducer, initialState)
 
-    // const clearCart = () => {
-    //     dispatch({ type: 'CLEAR_CART' })
-    // }
-    // const remove = (id) => {
-    //     dispatch({ type: 'REMOVE', payload: id })
-    // }
+    const clearCart = () => {
+        dispatch({ type: 'CLEAR_CART' })
+    }
+    const remove = (id) => {
+        dispatch({ type: 'REMOVE', payload: id })
+    }
     const increase = (id) => {
         dispatch({ type: 'INCREASE', payload: id })
     }
-    // const decrease = (id) => {
-    //     dispatch({ type: 'DECREASE', payload: id })
-    // }
+    const decrease = (id) => {
+        dispatch({ type: 'DECREASE', payload: id })
+    }
     // const fetchData = async () => {
     //     dispatch({ type: 'LOADING' })
     //     // const response = await fetch(url)
@@ -46,9 +46,9 @@ export const AppProvider = ({ children }) => {
     //     fetchData()
     // }, [])
 
-    // useEffect(() => {
-    //     dispatch({ type: 'GET_TOTALS' })
-    // }, [state.cart])
+    useEffect(() => {
+        dispatch({ type: 'GET_TOTALS' })
+    }, [state.cart])
     
     
     return (
@@ -57,7 +57,7 @@ export const AppProvider = ({ children }) => {
             ...state,
             // clearCart,
             // remove,
-            //hats,
+            //increase,
             // decrease,
             toggleAmount,
         }}
