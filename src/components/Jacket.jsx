@@ -3,7 +3,7 @@ import jackets from '../shared/jacket'
 import { useGlobalContext } from '../context/context'
 
 const Jacket = () => {
-    const { toggleAmount } = useGlobalContext()
+    const { cart, toggleAmount } = useGlobalContext()
     return (
         <section className="m-10 my-10">
             <h1 className="text-3xl">JACKETS</h1>

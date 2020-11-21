@@ -1,9 +1,8 @@
 import React, { useState, useContext, useReducer, useEffect } from 'react'
-import HATS from '../shared/hat'
-import JACKETS from '../shared/jacket'
-import MENS_CLOTHING from '../shared/men'
-import SNEAKERS from '../shared/sneaker'
-import WOMENS_CLOTHING from '../shared/women'
+import jackets from '../shared/jacket'
+import men from '../shared/men'
+import sneakers from '../shared/sneaker'
+import women from '../shared/women'
 
 import hats from '../shared/hat'
 
@@ -14,6 +13,10 @@ const AppContext = React.createContext();
 const initialState = {
     loading: false,
     cart: hats,
+    cart2: women,
+    cart3: men,
+    cart4: sneakers,
+    cart5: jackets,
     total: 0,
     amount: 0,
 }

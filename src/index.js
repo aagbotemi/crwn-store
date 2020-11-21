@@ -4,8 +4,6 @@ import './assets/css/main.css'
 import App from './App';
 import { AppProvider } from './context/context';
 
-
-
 ReactDOM.render(
   <React.StrictMode>
     <AppProvider>

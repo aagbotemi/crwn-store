@@ -3,7 +3,7 @@ import hats from '../shared/hat'
 import { useGlobalContext } from '../context/context'
 
 const Hat = () => {
-    const { toggleAmount } = useGlobalContext()
+    const { cart, toggleAmount } = useGlobalContext()
 
     return (
         <section className="m-10">

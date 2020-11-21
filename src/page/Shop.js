@@ -5,7 +5,7 @@ import Jacket from '../components/Jacket'
 import Men from '../components/Men'
 import Women from '../components/Women'
 
-const Home = () => {
+const Shop = () => {
     return (
         <section>
             <Hat />
@@ -18,4 +18,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Shop;

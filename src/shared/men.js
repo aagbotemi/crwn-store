@@ -1,7 +1,7 @@
 // eslint-disable-next-line import/no-anonymous-default-export
 const men = [
     {
-        id: 1,
+        id: 13,
         title: 'Camo Vest',
         price: 325,
         img:
@@ -9,7 +9,7 @@ const men = [
         amount: 1,
     },
     {
-        id: 2,
+        id: 14,
         title: 'Floral Shirt',
         price: 130,
         img:
@@ -17,7 +17,7 @@ const men = [
         amount: 1,
     },
     {
-        id: 3,
+        id: 15,
         title: 'Long Sleeve',
         price: 150,
         img:
@@ -25,7 +25,7 @@ const men = [
         amount: 1,
     },
     {
-        id: 4,
+        id: 16,
         title: 'Pink Shirt',
         price: 80,
         img:
@@ -33,7 +33,7 @@ const men = [
         amount: 1,
     },
     {
-        id: 5,
+        id: 17,
         title: 'Roll-up Jean Shirt',
         price: 220,
         img:
@@ -41,7 +41,7 @@ const men = [
         amount: 1,
     },
     {
-        id: 6,
+        id: 18,
         title: 'Polka Dot Shirt',
         price: 110,
         img:

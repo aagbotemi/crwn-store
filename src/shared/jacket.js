@@ -1,6 +1,7 @@
+// eslint-disable-next-line import/no-anonymous-default-export
 const jackets = [
     {
-        id: 1,
+        id: 9,
         title: 'Black Shearling',
         price: 150,
         img:
@@ -8,7 +9,7 @@ const jackets = [
         amount: 1,
     },
     {
-        id: 2,
+        id: 10,
         title: 'Grey Jean Jacket',
         price: 165,
         img:
@@ -16,7 +17,7 @@ const jackets = [
         amount: 1,
     },
     {
-        id: 3,
+        id: 11,
         title: 'Blue Jean Jacket',
         price: 90,
         img:
@@ -24,7 +25,7 @@ const jackets = [
         amount: 1,
     },
     {
-        id: 4,
+        id: 12,
         title: 'Brown Trench',
         price: 699.99,
         img:

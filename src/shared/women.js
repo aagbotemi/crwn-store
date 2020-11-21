@@ -1,6 +1,7 @@
+// eslint-disable-next-line import/no-anonymous-default-export
 const women = [
     {
-        id: 1,
+        id: 27,
         title: 'Blue Tank',
         price: 150,
         img:
@@ -8,7 +9,7 @@ const women = [
         amount: 1,
     },
     {
-        id: 2,
+        id: 28,
         title: 'Floral Blouse',
         price: 120,
         img:
@@ -16,7 +17,7 @@ const women = [
         amount: 1,
     },
     {
-        id: 3,
+        id: 29,
         title: 'Floral Skirt',
         price: 90,
         img:
@@ -24,7 +25,7 @@ const women = [
         amount: 1,
     },
     {
-        id: 4,
+        id: 30,
         title: 'Red Polka',
         price: 110,
         img:
@@ -32,14 +33,14 @@ const women = [
         amount: 1,
     },
     {
-        id: 5,
+        id: 31,
         title: 'Yellow Track Suit',
         price: 180,
         img: 'https://i.ibb.co/v1cvwNf/yellow-track-suit.png',
         amount: 1,
     },
     {
-        id: 6,
+        id: 32,
         title: 'White Vest',
         price: 100,
         img: 'https://i.ibb.co/qBcrsJg/white-vest.png',
