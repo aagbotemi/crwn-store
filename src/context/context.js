@@ -58,10 +58,8 @@ export const AppProvider = ({ children }) => {
         <AppContext.Provider
         value={{
             ...state,
-            // clearCart,
-            // remove,
-            //increase,
-            // decrease,
+            clearCart,
+            remove,
             toggleAmount,
         }}
         >

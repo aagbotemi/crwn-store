@@ -23,7 +23,7 @@ const Hat = () => {
                                     <p>{title}</p>
                                     <p className="ml-auto">&#36;{price}</p>
                                 </div>
-                                <button className="btn absolute bg-white p-2 font-bold" onClick={() => toggleAmount(id, 'inc')}>
+                                <button className="btn absolute bg-white p-2 font-bold rounded hover:text-white hover:bg-black" onClick={() => toggleAmount(id, 'inc')}>
                                     ADD TO CART
                                 </button>
                             </div>

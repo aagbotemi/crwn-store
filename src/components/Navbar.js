@@ -69,7 +69,7 @@ const Navbar = ({fixed}) => {
                     </li>
                     
                     </ul>
-                </div>
+                    </div>
                 </div>
             </nav>
         </>
