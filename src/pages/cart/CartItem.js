@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { PlusCircleIcon, MinusCircleIcon, TrashIcon } from '../../components/icons'
 import { CartContext } from '../../contexts/CartContext';
-
 import { formatNumber } from '../../helpers/utils';
 
 const CartItem = ({product}) => {
@@ -41,13 +40,13 @@ const CartItem = ({product}) => {
                 }
 
             {
-                    product.quantity === 1 &&
-                    <button
+                product.quantity === 1 &&
+                <button
                 onClick={() => removeProduct(product)}
                 className="btn btn-danger btn-sm mb-1">
                     <TrashIcon width={"20px"}/>
                 </button>
-                }
+            }
                 
         </div>
     </div>

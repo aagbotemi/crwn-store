@@ -1,5 +1,6 @@
 import React from 'react';
 import Routes from './routes';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { HelmetProvider } from 'react-helmet-async';
 import ProductsContextProvider from './contexts/ProductsContext';

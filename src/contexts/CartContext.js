@@ -49,7 +49,7 @@ const CartContextProvider = ({children}) => {
         <CartContext.Provider value={contextValues} >
             { children }
         </CartContext.Provider>
-     );
+    );
 }
- 
+
 export default CartContextProvider;
