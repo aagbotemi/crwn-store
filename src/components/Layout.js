@@ -16,7 +16,7 @@ const Layout = ({title, description, children}) => {
             <main className="container">
                 {children}
             </main>
-            {/* <PayModal /> */}
+            <PayModal />
             <Footer/>
         </>
     );
