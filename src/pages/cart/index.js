@@ -7,7 +7,7 @@ import { formatNumber } from '../../helpers/utils';
 import { Link } from 'react-router-dom';
 
 const Cart = () => {
-    const { total, cartItems, itemCount, clearCart, checkout, handleCheckout } = useContext(CartContext);
+    const { total, cartItems, itemCount, clearCart, checkout, handleCheckout, openModal } = useContext(CartContext);
     
     return ( 
         <Layout title="Cart" description="This is the Cart page" >
@@ -39,7 +39,7 @@ const Cart = () => {
                                 <h3 className="m-0 txt-right">{formatNumber(total)}</h3>
                                 <hr className="my-4"/>
                                 <div className="text-center">
-                                    <button type="button" className="btn btn-success mb-2 mr-2">PAY NOW</button>
+                                    <button type="button" className="btn btn-success mb-2 mr-2"  onClick={openModal}>PAY NOW</button>
                                     <button type="button" className="btn btn-primary mb-2 mr-2" onClick={handleCheckout}>CHECKOUT</button>
                                     <button type="button" className="btn btn-outline-primary btn-sm" onClick={clearCart}>CLEAR</button>
                                 </div>
