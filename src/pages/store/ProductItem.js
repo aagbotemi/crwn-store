@@ -22,7 +22,7 @@ const ProductItem = ({product}) => {
             <img style={img} className="img-fluid" 
                 src={product.img + '?v=' + product.id} alt="" />
             <div>
-                <p>{product.title}</p>
+                <p className="mb-0">{product.title}</p>
                 <h4 className="text-left">{formatNumber(product.price)}</h4>
             </div>
             <div className="text-right">
