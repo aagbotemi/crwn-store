@@ -31,10 +31,9 @@ Modal
 .modal-container {
     background: #eee;
     border-radius: 0.25rem;
-    width: 13rem;
-    height: 70vh;
+    width: 18rem;
+    height: 50vh;
     display: grid;
-    /* place-items: center; */
     position: relative;
 }
 .close-modal-btn {
@@ -48,13 +47,10 @@ Modal
     cursor: pointer;
     outline: none !important;
 }
-
-
 .modal-logo {
     background: #ddd;
     transform: translateY(-17px);
     border-radius: 50%;
     padding:7px;
     margin-bottom: -15px;
-    /* text-align: center !important; */
 }
