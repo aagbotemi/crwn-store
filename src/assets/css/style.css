@@ -1,4 +1,4 @@
-.total-amount {
+/* .total-amount {
     top: 0.9rem;
     right: 1.4rem;
     font-size: 15px;
@@ -95,7 +95,7 @@
 Modal
 ===============
 */
-.modal-overlay {
+/*.modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -109,7 +109,7 @@ Modal
     z-index: -1;
 }
 /* OPEN/CLOSE MODAL */
-.show-modal {
+/*.show-modal {
     visibility: visible;
     z-index: 10;
 }
@@ -133,4 +133,4 @@ Modal
     border-color: transparent;
     color:  hsl(360, 67%, 44%);
     cursor: pointer;
-}
+} */

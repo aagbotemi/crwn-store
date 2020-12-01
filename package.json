@@ -39,10 +39,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "autoprefixer": "^9.8.6",
-    "postcss-cli": "^8.3.0",
-    "tailwindcss": "^1.9.6"
   }
 }

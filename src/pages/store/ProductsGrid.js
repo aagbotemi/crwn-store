@@ -4,50 +4,32 @@ import { ProductsContext } from '../../contexts/ProductsContext';
 // import styles from './ProductsGrid.module.scss';
 
 const ProductsGrid = () => {
-
-    const p__container = {
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
-        gridGap: '15px',
-    }
-
-    const { products} = useContext(ProductsContext)
+    const { products } = useContext(ProductsContext)
 
     return ( 
-        <div
-            style={p__container}
-        >
+        <div>
             <div className="row">
-                <div className="col-sm-8">
-                    <div className="py-3">
+                {/* <div className="col-sm-8 col-md-6"> */}
+                <div className="col-12 text-center">
+                    <div className="py-3 text-center">
                         {products.length} Products
                     </div>
                 </div>
-                <div className="col-sm-4">
+                {/* <div className="col-sm-4 col-md-6">
                     <div className="form-group">
                         <input type="text" name="" placeholder="Search product" className="form-control" id=""/>
                     </div>
-                </div>
+                </div> */}
             </div>
-            <div 
-            // className={styles.p__grid}
-            >
-
-
+            <div className="row">
                 {
                     products.map(product => (
                         <ProductItem key={product.id} product={product}/>
                     ))
                 }
-
-            </div>
-            <div 
-            // className={styles.p__footer}
-            >
-
             </div>
         </div>
-     );
+    );
 }
- 
+
 export default ProductsGrid;

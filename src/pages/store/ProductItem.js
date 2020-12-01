@@ -11,12 +11,20 @@ const ProductItem = ({product}) => {
         return !!cartItems.find(item => item.id === product.id);
     }
 
+    const img = {
+        display: "block",
+        margin: "0 auto 10px",
+        maxHeight: "200px"
+    }
+    
     return ( 
-        <div className="card card-body">
-            <img style={{display: "block", margin: "0 auto 10px", maxHeight: "200px"}} className="img-fluid" 
-            src={product.img + '?v=' + product.id} alt=""/>
-            <p>{product.title}</p>
-            <h3 className="text-left">{formatNumber(product.price)}</h3>
+        <div className="card card-body col-md-4  col-md-4 col-sm-6 w-full mb-4">
+            <img style={img} className="img-fluid" 
+                src={product.img + '?v=' + product.id} alt="" />
+            <div>
+                <p>{product.title}</p>
+                <h4 className="text-left">{formatNumber(product.price)}</h4>
+            </div>
             <div className="text-right">
                 <Link  to="/" className="btn btn-link btn-sm mr-2">Details</Link>
 
@@ -36,7 +44,7 @@ const ProductItem = ({product}) => {
                 
             </div>
         </div>
-     );
+    );
 }
  
 export default ProductItem;
